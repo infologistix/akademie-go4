@@ -1,5 +1,7 @@
 package main
 
+import "net/mail"
+
 // <- Dies sind Kommentar Angaben
 // Dies ist ein Sample
 // Die einzelnen Structs sind selber hier anzulegen. Der Merge der Daten sollte ohne Probleme vollzogen werden können
@@ -18,4 +20,18 @@ type City struct {
 	Name       string `json:"name"`
 	Einwohner  int    `json:"einwohner"`
 	Bundesland string `json:"bundesland"`
+}
+
+type Project struct {
+	Name     string   `json:"name"`
+	Customer Customer `json:"customer"`
+	City     City     `json:"city"`
+	Budget   string   `json:"budget"`
+}
+
+type InfologistixMembers struct {
+	Name    string  `json:"name"`
+	Email   string  `json:"mail"`
+	City    City    `json:"city"`
+	Project Project `json:"project"`
 }
