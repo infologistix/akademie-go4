@@ -19,6 +19,14 @@ var l_cities = []City{
 	{Name: "Frankfurt", Einwohner: 700000, Bundesland: "H"},
 }
 
+var l_projects = []Project{
+	{Name: "BA", Customer: l_customers[1], City: l_cities[0], Budget: "300.000"},
+}
+
+var l_members = []InfologistixMembers{
+	{Name: "Paul", City: l_cities[1], Email: "paul.schmidt@infologistix.de", Project: l_projects[0]},
+}
+
 // function getAll
 // wird mit einem Handler aus ResponseWriter und dazugehörigem Pointer Request aufgebaut
 // die Parameter werden der Funktion als w & r übergeben
@@ -44,3 +52,11 @@ func cities(w http.ResponseWriter, r *http.Request) {
 	}
 }
 >>>>>>> 9f2b1ed69feb278228ea0d88cab4c5e20b5355b6
+
+func projects(w http.ResponseWriter, r *http.Request) {
+	log.Printf(r.RequestURI)
+	if json.NewEncoder(w).Encode(l_projects) != nil {
+		log.Fatal(json.NewEncoder(w).Encode(l_projects)) // logge den Fehler direkt
+		log.Fatalf("There was some issue")               // Logge etwas als String
+	}
+}

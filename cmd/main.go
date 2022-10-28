@@ -13,6 +13,7 @@ func main() {
 	// mit folgendem Befehl wird ein Handler für eine HTTP-Route hinzugefügt
 	router.HandleFunc("/all", getAll)
 	router.HandleFunc("/cities", cities)
+	router.HandleFunc("/projects", projects)
 
 	// Ab hier beginnt die initialisierung des HTTP-Servers
 	fmt.Println("Listening on http://localhost:8080/")
