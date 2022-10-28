@@ -1,0 +1,37 @@
+# Team Hackathon infologistix
+
+Dieses Repository dient als Team Hackathon Startpunkt einer Freitagsakademie.
+
+## Benutzung
+
+```bash
+$ go run cmd/*
+```
+Mit dem Befehl lässt sich der Webserver starten und man kann unter der im Fenster angezeigten URL auf den eigenen geschriebenen Dienst zugreifen.
+
+## GO-Strukturen
+
+In Go werden die Pakete und Funktionen hierarisch und in logischen Gruppen in einzelnen Dateien zusammengefasst. Dabei gilt, dass die entsprechenden Dateien Hinweis darauf geben, welchen Sinn der Inhalt besitzt.
+
+In diesem Fall sieht die Struktur wie folgt aus:
+```
+|
+| - go.mod # beschreibt die Go-Module, die benötigt werden und das Package
+| - cmd
+|   | - main.go
+|   | - data.go
+|   | - handler.go
+```
+Diese Strukturen und Benamungen sind falls möglich beizubehalten, wenngleich für jeden Handler (HTTP-Endpunkt) eine eigene Datei erstellt werden kann. Die Verlinkung innerhalb der `main.go` erfolgt automatisch.
+
+### main.go
+
+Die Hauptdatei, in welcher der Rest-Dienst gestartet wird. Sämtliche Handler werden hier registriert und werden verfügbar gemacht.
+
+### data.go
+
+Auslagerung der Datentypen. Diese können hier im `Struct` Format abgelegt werden. Es erfolgt neben der Typisierung (zb: `string`) auch die JSON-Notation und deren Beschreibung. In der Datei ist auch ein Beispiel für einen Datensatz zu finden. 
+
+### handler.go
+
+Die eigentliche Magie entsteht hier an dieser Stelle durch hinzufügen von spezifischen Abläufen für bestimmte HTTP-Routen. Diese können weiter spezifiziert werden, als das Beispiel zeigt.
