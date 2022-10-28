@@ -27,3 +27,4 @@ func getAll(w http.ResponseWriter, r *http.Request) {
 }
 
 // Hier ist Platz für weitere Handler
+// Hier ist ein Kommentar von Marie
