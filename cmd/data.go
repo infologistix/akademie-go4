@@ -1,7 +1,5 @@
 package main
 
-import "net/mail"
-
 // <- Dies sind Kommentar Angaben
 // Dies ist ein Sample
 // Die einzelnen Structs sind selber hier anzulegen. Der Merge der Daten sollte ohne Probleme vollzogen werden können
@@ -35,3 +33,5 @@ type InfologistixMembers struct {
 	City    City    `json:"city"`
 	Project Project `json:"project"`
 }
+
+//Neue Zeile
