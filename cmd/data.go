@@ -14,3 +14,8 @@ type Customer struct {
 }
 
 // Ab Hier können einzelne Structs hinzugefpügt werden
+type City struct {
+	Name       string `json:"name"`
+	Einwohner  int    `json:"einwohner"`
+	Bundesland string `json:"bundesland"`
+}
