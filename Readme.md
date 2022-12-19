@@ -35,3 +35,26 @@ Auslagerung der Datentypen. Diese können hier im `Struct` Format abgelegt werde
 ### handler.go
 
 Die eigentliche Magie entsteht hier an dieser Stelle durch hinzufügen von spezifischen Abläufen für bestimmte HTTP-Routen. Diese können weiter spezifiziert werden, als das Beispiel zeigt.
+
+## Ziel
+Ziel ist das Erproben von Git in der Praxis. Dafür sollen alle aus dem Team folgende Operationen mindestens einmal durchgeführt haben:
+<ul>
+    <li>Eins der zur Verfügung stehenden Repositories klonen</li>
+    <li>Eine Änderung im Code pushen, die zum Geschehen beiträgt (also nicht nur einen einzeiligen Kommentar)</li>
+    <ul>
+        <li>Was sind die einzelnen Schritte?</li>
+    </ul>
+    <li>Einen Pull durchführen, nachdem jemand anderes etwas ins Repo gepusht hat</li>
+    <ul>
+        <li>Wo stehen die letztes Commits?</li>
+        <li>Wer hat die letzte Änderung vorgenommen und was wurde geändert?</li>
+    </ul>
+    <li>Einen Mergekonflikt lösen</li>
+    <ul>
+        <li>Was ruft einen Mergekonflikt hervor?</li>
+        <li>Welche Möglichkeiten gibt es einen Mergekonflikt zu lösen?</li>
+    </ul>
+    <li>Welche Befehle gibt es noch (https://git-scm.com/docs)? Probiert weitere aus.</li>
+</ul>
+
+Die Antworten auf die Fragen können gerne direkt hinter die Fragen geschrieben und anschließend gepusht werden.
