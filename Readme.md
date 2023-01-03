@@ -3,9 +3,15 @@
 Dieses Repository dient als Team Hackathon Startpunkt einer Freitagsakademie.
 
 ## Benutzung
+Git Bash:
 
 ```bash
 $ go run cmd/*
+```
+Powershell:
+```bash
+$ cd cmd
+$ go run .
 ```
 Mit dem Befehl lässt sich der Webserver starten und man kann unter der im Fenster angezeigten URL auf den eigenen geschriebenen Dienst zugreifen.
 
