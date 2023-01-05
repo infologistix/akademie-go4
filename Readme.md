@@ -46,7 +46,7 @@ Die eigentliche Magie entsteht hier an dieser Stelle durch hinzufügen von spezi
 Ziel ist das Erproben von Git in der Praxis. Dafür sollen alle aus dem Team folgende Operationen mindestens einmal durchgeführt haben:
 <ul>
     <li>Eins der zur Verfügung stehenden Repositories klonen</li>
-    <li>Eine Änderung im Code pushen, die zum Geschehen beiträgt (also nicht nur einen einzeiligen Kommentar)</li>
+    <li>Eine Änderung im Code pushen, die zu einer funktionalen Veränderung des Codes beiträgt (also nicht nur einen einzeiligen Kommentar)</li>
     <ul>
         <li>Was sind die einzelnen Schritte?</li>
     </ul>
@@ -61,6 +61,9 @@ Ziel ist das Erproben von Git in der Praxis. Dafür sollen alle aus dem Team fol
         <li>Welche Möglichkeiten gibt es einen Mergekonflikt zu lösen?</li>
     </ul>
     <li>Welche Befehle gibt es noch (https://git-scm.com/docs)? Probiert weitere aus.</li>
+    <ul>
+        <li>Sucht euch einen heraus und versucht zu beschreiben, was man damit machen kann.</li>
+    </ul>
 </ul>
 
 Die Antworten auf die Fragen können gerne direkt hinter die Fragen geschrieben und anschließend gepusht werden.
