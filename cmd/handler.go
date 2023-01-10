@@ -11,20 +11,25 @@ import (
 var l_customers = []Customer{
 	{Name: "AWS", Address: "München", Tel: "+49 000 12345678", Email: "info@aws.de"}, // definite Typangabe
 	{"infologistix GmbH", "Garching", "+49 111 87654321", "info@infologistix.de"},    // Reihenfolge basierende Typanagabe
+	{"NordLB", "Hannover", "123", "@nordlb.de"},
 }
 
 var l_cities = []City{
 	{Name: "Hamburg", Einwohner: 2e6, Bundesland: "HH"},
 	{Name: "Aachen", Einwohner: 200000, Bundesland: "NRW"},
 	{Name: "Frankfurt", Einwohner: 700000, Bundesland: "H"},
+	{Name: "Kaiserslautern", Einwohner: 99845, Bundesland: "RP"},
+	{"Hannover", 200000, "NI"},
 }
 
 var l_projects = []Project{
 	{Name: "BA", Customer: l_customers[1], City: l_cities[0], Budget: "300.000"},
+	{"SPOT", l_customers[3], 4, "123.456"},
 }
 
 var l_members = []InfologistixMembers{
 	{Name: "Paul", City: l_cities[1], Email: "paul.schmidt@infologistix.de", Project: l_projects[0]},
+	{Name: "Yohanes", City: l_cities[3], Email: "yohanes.korbafo@infologistix.de", Project: l_projects[1]},
 }
 
 // function getAll
