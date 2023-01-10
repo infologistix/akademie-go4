@@ -16,6 +16,7 @@ func main() {
 	router.HandleFunc("/projects", projects)
 
 	// Ab hier beginnt die initialisierung des HTTP-Servers
+	// Yohanes war hier !!
 	fmt.Println("Listening on http://localhost:8080/")
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
