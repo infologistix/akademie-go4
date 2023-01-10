@@ -41,9 +41,6 @@ func getAll(w http.ResponseWriter, r *http.Request) {
 }
 
 // Hier ist Platz für weitere Handler
-<<<<<<< HEAD
-// Hier ist ein Kommentar von Marie
-=======
 func cities(w http.ResponseWriter, r *http.Request) {
 	log.Printf(r.RequestURI)
 	if json.NewEncoder(w).Encode(l_cities) != nil {
@@ -51,7 +48,6 @@ func cities(w http.ResponseWriter, r *http.Request) {
 		log.Fatalf("There was some issue")             // Logge etwas als String
 	}
 }
->>>>>>> 9f2b1ed69feb278228ea0d88cab4c5e20b5355b6
 
 func projects(w http.ResponseWriter, r *http.Request) {
 	log.Printf(r.RequestURI)
