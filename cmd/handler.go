@@ -49,6 +49,7 @@ func cities(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// noch eine Funktion
 func projects(w http.ResponseWriter, r *http.Request) {
 	log.Printf(r.RequestURI)
 	if json.NewEncoder(w).Encode(l_projects) != nil {
